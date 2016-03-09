@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:960px;
+    margin:0 auto;
+}
+header{
+    background: #f2f2f2;
+}
+header .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    height: 30px;
+}
+header a.mail{
+    font-size: 12px;
+    line-height: 1;
+    color:#29bdca;
+    text-decoration: none;
+    margin-right: 20px;
+}
+header a.phone{
+    font-size: 12px;
+    line-height: 1;
+    color: #808080;
+    text-decoration: none;
+    margin-right: 20px;
+}
+header .container>a:hover{
+    color:red;
+}
+header .social{
+    padding: 0;
+    margin: 0;
+    width:124px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+header .social a{
+    display: block;
+    background: #c2c2c2;
+    width: 30px;
+    height: 30px;
+}
+
+
+nav .container{
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 630px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container ul li{
+    list-style: none;
+}
+nav .container ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#808080;
+}
+nav .container ul li a:hover{
+    color:red;
+}
+.crums{
+    background: #2095a0;
+}
+.crums .container{
+    height: 37px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.crums .container ul{
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.crums .container ul li{
+    list-style: none;
+    font-size: 12px;
+    color: #5cd9ec;
+}
+.crums .container ul li:not(:last-child):after{
+    content: '>';
+    margin-left: 8px;
+    margin-right: 11px;
+    color:black;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: bold;
+}
+.crums .container ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1;
+}
