@@ -333,10 +333,20 @@ footer .col-1 .fa-search:before{
 footer .col-1 .fa-search:hover:before{
     color:#000;
 }
+
 footer .col-2 .block{
     padding:11px 16px 10px 17px;
     background: #333333;
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+footer .col-2 .block.fa-twitter:before{
+    position: absolute;
+    bottom:-30px;
+    left:7px;
+    font-size: 72px;
+    color: #2d2d2d;
 }
 footer .col-2 .block p{
     color:#839983;
