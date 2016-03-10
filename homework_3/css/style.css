@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans';
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -36,21 +38,39 @@ header a.phone{
 header .container>a:hover{
     color:red;
 }
-header .social{
+.social{
     padding: 0;
     margin: 0;
     width:124px;
     display: inline-flex;
     justify-content: space-around;
 }
-header .social a{
+.social a{
     display: block;
     background: #c2c2c2;
     width: 30px;
     height: 30px;
+    position: relative;
 }
-
-
+[class^=fa-]:before{
+    color:#808080;
+    text-decoration: none;
+    position: absolute;
+    font-size: 20px;
+    top:5px;
+    left:7px;
+    line-height: 1;
+    font-family: 'FontAwesome' !important;
+}
+[class^=fa-]:hover:before{
+    color:#fff;
+}
+.fa-vk:before{
+    left:5px;
+}
+.fa-facebook-f:before{
+    left:9px;
+}
 nav .container{
     height: 140px;
     display: flex;
@@ -114,4 +134,293 @@ nav .container ul li a:hover{
     color: #ffffff;
     font-size: 12px;
     line-height: 1;
+}
+.info{
+    background: #29bdca;
+}
+.info .container{
+    height: 150px;
+    padding-top: 52px;
+}
+.info .container .up{
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+}
+.info .container .down{
+    color: #5cd9ec;
+    font-size: 16px;
+    padding-top: 10px;
+}
+section .nav {
+    background: #f2f2f2;
+    height:42px;
+    margin:45px 0;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start
+}
+section .nav ul{
+    padding: 0;
+    margin: 0;
+
+
+}
+section .nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    display: inline-flex;
+    margin-left:6px;
+}
+section .nav ul li a{
+    display: inline-flex;
+    padding:0 15px;
+    text-decoration: none;
+    line-height: 32px;
+    color: #808080;
+}
+section .nav ul li a:hover{
+    background: #29bdca;
+    color: #fff;
+}
+section .items .container{
+   display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 17px;
+}
+section .items .container .item:nth-child(2n+3){
+    align-self: flex-start;
+
+}
+section .items .name{
+    display: block;
+    line-height: 1;
+    margin-top: 11px;
+    font-size: 16px;
+    color:#29bdca;
+}
+section .items .date{
+    display: block;
+    line-height: 1;
+    margin-top: 9px;
+    font-size: 12px;
+    color:#808080;
+    margin-bottom: 35px;
+}
+section .adv{
+    background: #cbf1f4;
+}
+section .adv .container{
+    height:100px;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section .adv span{
+    font-size: 18px;
+    color:#6a95a0
+}
+section .adv button{
+    width: 170px;
+    height: 37px;
+    border-radius: 3px;
+    border:0;
+    background: #1c818a;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 16px;
+    box-shadow: 0 2px 0 #156168;
+    cursor: pointer;
+}
+section .adv button:hover{
+    background: #156168;
+}
+section .findus{
+    background: #29bdca;
+}
+section .findus .container{
+    height:100px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+section .findus span{
+    font-size: 20px;
+    line-height: 1;
+    color: #ffffff;
+}
+section .findus .social{
+    width: 163px;
+    height: 40px;
+    justify-content: space-between;
+}
+section .findus a{
+    background: #2095a0;
+    width: 40px;
+    height: 40px;
+}
+section .findus [class^=fa-]:before{
+    color:#fff;
+    font-size: 16px;
+    top:13px;
+    left:13px;
+}
+section .findus [class^=fa-]:hover:before{
+    color: blue;
+}
+section .findus .fa-facebook-f:before{
+    left:15px;
+}
+
+
+footer .up{
+    background: #444444;
+}
+footer .up .container{
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .up [class^=col-]{
+    width: 300px;
+}
+footer .up [class^=col-] h3{
+    margin-top: 45px;
+    margin-bottom:23px;
+    font-size: 18px;
+    color:white;
+    line-height: 1;
+    font-weight: normal;
+}
+footer .col-1 p{
+    color:#839983;
+    font-size: 14px;
+    line-height: 24px;
+}
+footer .col-1 form{
+    width: 100%;
+    display: flex;align-items: center;
+}
+footer .col-1 form input[type=text]{
+    width: 245px;
+    height: 35px;
+    border:none;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-right:5px;
+}
+footer .col-1 form button{
+    width: 50px;
+    height: 35px;
+    background: #bfbfbf;
+    border-radius: 3px;
+    border: none;
+    cursor:pointer;
+}
+footer .col-1 .fa-search:before{
+    color:#fff;
+    font-weight: bold;
+}
+footer .col-1 .fa-search:hover:before{
+    color:#000;
+}
+footer .col-2 .block{
+    padding:11px 16px 10px 17px;
+    background: #333333;
+    margin-bottom: 20px;
+}
+footer .col-2 .block p{
+    color:#839983;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+footer .col-2 .block a{
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+footer .col-2 .block span{
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    line-height: 24px;
+    color: #839983;
+}
+footer .col-2>a{
+    margin-top: 5px;
+    color:#839983;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 14px;
+
+
+}
+footer .col-2 .fa-twitter:before{
+    font-size: 16px;
+    margin-right: 4px;
+}
+footer .col-3 p{
+    margin: 0;
+    padding-top: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    color:#839983;
+}
+footer .col-3 span{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color:#83838e;
+    margin-bottom: 4px;
+}
+footer .down{
+    background: #333333;
+}
+footer .down .container{
+    display:flex;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+footer .down ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+footer .down li{
+    list-style: none;
+}
+footer .down li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#83838e;
+    font-size: 12px;
+}
+footer .down li a:hover{
+    text-decoration: underline;
+}
+footer .down span.footer{
+    color:#83838e;
+    font-size: 12px;
+}
+footer .down span.footer span{
+    color:#fff;
 }
